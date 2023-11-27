@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CustomerCrudRoutingModule } from './customer-crud-routing.module';
 import { CustomerIndexComponent } from './customer-index/customer-index.component';
 import { CustomerSaveComponent } from './customer-save/customer-save.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {SharedModule} from "shared-lib";
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { CustomerSaveComponent } from './customer-save/customer-save.component';
   ],
   imports: [
     CommonModule,
-    CustomerCrudRoutingModule
+    CustomerCrudRoutingModule,
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class CustomerCrudModule { }

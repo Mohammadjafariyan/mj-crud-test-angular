@@ -1,1 +1,66 @@
 <h1 style="background-color: crimson;width: 100vw;text-align: center">customer-save works!</h1>
+
+<form [formGroup]="customerForm" class="form d-flex "  style="display: table-caption;margin-left: 55%">
+
+  <table>
+    <tbody>
+    <tr>
+      <td>
+        <label for="Firstname">Firstname: </label>
+        <input required="required" id="Firstname" type="text" formControlName="Firstname">
+        <lib-validation-message name="Firstname" [form]="customerForm"> </lib-validation-message>
+
+      </td>
+      <td>
+
+        <label for="Lastname">Lastname: </label>
+        <input id="Lastname" type="text" formControlName="Lastname">
+        <lib-validation-message name="Lastname" [form]="customerForm"> </lib-validation-message>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+        <label for="DateOfBirth">DateOfBirth: </label>
+        <input id="DateOfBirth" type="date" formControlName="DateOfBirth">
+        <lib-validation-message name="DateOfBirth" [form]="customerForm"> </lib-validation-message>
+
+      </td>
+      <td>
+
+        <label for="PhoneNumber">PhoneNumber: </label>
+        <input id="PhoneNumber" type="tel" formControlName="PhoneNumber">
+        <lib-validation-message name="PhoneNumber" [form]="customerForm"> </lib-validation-message>
+
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        <label for="Email">Email: </label>
+        <input id="Email" type="email" formControlName="Email">
+        <lib-validation-message name="Email" [form]="customerForm"> </lib-validation-message>
+
+      </td>
+      <td>
+
+        <label for="BankAccountNumber">BankAccountNumber: </label>
+        <input id="BankAccountNumber" type="text" formControlName="BankAccountNumber">
+        <lib-validation-message name="BankAccountNumber" [form]="customerForm"> </lib-validation-message>
+
+      </td>
+    </tr>
+
+
+
+
+
+    </tbody>
+  </table>
+
+
+  <button type="submit" (click)="submit($event)">submit</button>
+</form>

@@ -15,15 +15,16 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+
     "paths": {
       "@badeball/cypress-cucumber-preprocessor/*": ["./node_modules/@badeball/cypress-cucumber-preprocessor/dist/subpath-entrypoints/*"],
 
       "shared-lib": [
-        "/projects/shared/src/public-api.ts"
+        "./projects/shared/src/public-api.ts"
       ],
       "shared": [
         "dist/shared/shared",
-        "dist/shared"
+        "dist/shared",
       ]
     },
     "target": "es2020",
@@ -32,7 +33,7 @@
       "es2020",
       "dom"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

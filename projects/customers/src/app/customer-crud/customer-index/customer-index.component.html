@@ -1,1 +1,32 @@
 <h1 style="background-color: #12fae6;width: 100vw;text-align: center">customer                 index works!</h1>
+
+
+
+customers list
+<a routerLink="/customers/save">new customer</a>
+<table>
+  <thead>
+  <tr>
+    <td>Firstname </td>
+    <td>Lastname </td>
+    <td>DateOfBirth </td>
+    <td>PhoneNumber </td>
+    <td>Email </td>
+    <td>BankAccountNumber </td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customers; let i=index">
+
+    <td>{{customer.Firstname}} </td>
+    <td>{{customer.Lastname}} </td>
+    <td>{{customer.DateOfBirth}} </td>
+    <td>{{customer.PhoneNumber}} </td>
+    <td>{{customer.Email}} </td>
+    <td>{{customer.BankAccountNumber}} </td>
+    <td><button (click)="edit(customer)">edit</button> </td>
+    <td><button (click)="delete(customer)">delete</button> </td>
+
+  </tr>
+  </tbody>
+</table>

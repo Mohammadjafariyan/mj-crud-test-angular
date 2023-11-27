@@ -1,0 +1,13 @@
+
+
+<div  *ngIf="form.controls[name].invalid && (form.controls[name].dirty || form.controls[name].touched)" class="alert">
+
+  <div *ngIf="name && form.controls[name].errors?.['required']">
+    {{name}} is required
+  </div>
+</div>
+<!--
+  {{name}} is here !
+
+<button (click)="logMe(form,name )">logMe</button>
+-->
