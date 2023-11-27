@@ -16,6 +16,8 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
+      "@badeball/cypress-cucumber-preprocessor/*": ["./node_modules/@badeball/cypress-cucumber-preprocessor/dist/subpath-entrypoints/*"],
+
       "shared-lib": [
         "/projects/shared/src/public-api.ts"
       ],
@@ -29,7 +31,8 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
