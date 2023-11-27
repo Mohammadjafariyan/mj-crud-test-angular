@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { CustomerCrudModule } from './customer-crud/customer-crud.module';
 import {CommonModule} from "@angular/common";
-import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
-    CommonModule,
-    RouterModule
+    CustomerCrudModule
   ],
   providers: [],
   bootstrap: [AppComponent]
