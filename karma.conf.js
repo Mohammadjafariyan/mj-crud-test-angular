@@ -3,6 +3,15 @@
 
 module.exports = function (config) {
   config.set({
+
+    files: [
+      // Add your application files
+      'src/**/*.ts',
+
+      // Add your test files
+      'src/**/*.spec.ts',
+      'projects/**/*.spec.ts'
+    ],
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
