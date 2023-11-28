@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CustomerCrudModule } from './customer-crud/customer-crud.module';
+import { CustomerCrudModule } from './features/customer/customer-crud.module';
 import {CommonModule} from "@angular/common";
 
 @NgModule({

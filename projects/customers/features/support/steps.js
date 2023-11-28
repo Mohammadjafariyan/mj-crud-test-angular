@@ -2,7 +2,7 @@ const assert = require('assert')
 const { When, Then } = require('@cucumber/cucumber')
 //const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('chai');
-const { CustomerIndexComponent } = require('../../src/app/customer-crud/customer-index/customer-index.component.ts');
+const { CustomerIndexComponent } = require('../../src/app/features/customer/customer-index/customer-index.component.ts');
 const { TestBed } = require('@angular/core/testing');
 const { FormsModule } = require('@angular/forms');
 

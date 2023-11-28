@@ -6,7 +6,7 @@ module.exports = withModuleFederationPlugin({
 
   exposes: {
     './Component': './projects/customers/src/app/app.component.ts',
-    './CustomerCrudModule': './projects/customers/src/app/customer-crud/customer-crud.module.ts',
+    './CustomerCrudModule': './projects/customers/src/app/features/customer/customer-crud.module.ts',
 
   },
 

@@ -1,13 +1,30 @@
 
 
-<div  *ngIf="form.controls[name].invalid && (form.controls[name].dirty || form.controls[name].touched)" class="alert">
+<div  *ngIf="form.controls[name].invalid && (form.controls[name].dirty || form.controls[name].touched)" class="alert " style="color:red">
 
   <div *ngIf="name && form.controls[name].errors?.['required']">
     {{name}} is required
   </div>
+
+
+  <div *ngIf="name && form.controls[name].errors?.['invalidPhone']">
+    {{name}} is invalid
+  </div>
+
+  <div *ngIf="name && form.controls[name].errors?.['email']">
+    {{name}} is invalid email
+  </div>
+
+  <div *ngIf="name && form.controls[name].errors?.['pattern']">
+    {{name}} is invalid
+  </div>
+
 </div>
+
 <!--
+
   {{name}} is here !
 
 <button (click)="logMe(form,name )">logMe</button>
+
 -->

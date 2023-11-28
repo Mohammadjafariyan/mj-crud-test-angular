@@ -24,6 +24,8 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "@badeball/cypress-cucumber-preprocessor": "^19.2.0",
+    "google-libphonenumber": "^3.2.33",
+    "libphonenumber": "^0.0.10",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -37,6 +39,7 @@
     "@cypress/schematic": "^2.4.0",
     "@types/chai": "^4.3.11",
     "@types/cucumber": "^7.0.0",
+    "@types/google-libphonenumber": "^7.4.30",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "chai": "^4.3.10",

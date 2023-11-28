@@ -1,6 +1,7 @@
 <h1 style="background-color: crimson;width: 100vw;text-align: center">customer-save works!</h1>
 
 <form [formGroup]="customerForm" class="form d-flex "  style="display: table-caption;margin-left: 55%">
+  <input id="Id" type="Id" formControlName="Id" hidden="hidden">
 
   <table>
     <tbody>
@@ -61,6 +62,10 @@
     </tbody>
   </table>
 
+
+  <div style="color:red">
+    {{validationMessages}}
+  </div>
 
   <button type="submit" (click)="submit($event)">submit</button>
 </form>
