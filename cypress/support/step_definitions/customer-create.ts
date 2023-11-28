@@ -20,7 +20,14 @@ Given("I am on new customer form", function () {
 });
 
 When("I fill form and submit", () => {
-  cy.get("[data-cy=goNewCustomer]").type(`new customer-${Math.floor(Math.random()*100)}{enter}`);
+  cy.get("[formcontrolname='Firstname']").type(`new customer-${Math.floor(Math.random()*100)}{enter}`);
+  cy.get("[formcontrolname='Lastname']").type(`new customer-${Math.floor(Math.random()*100)}{enter}`);
+  cy.get("[formcontrolname='DateOfBirth']").type(`2023-11-28`);
+  cy.get("[formcontrolname='PhoneNumber']").type(`+989148980692`);
+  cy.get("[formcontrolname='Email']").type(`mohammad.jafariyan${Math.round(Math.random()*1000)}@gmail.com`);
+  cy.get("[formcontrolname='BankAccountNumber']").type(Math.floor(Math.random()*100) + '');
+  cy.get("button[type='submit']").click();
+
 
 });
 
